@@ -4,5 +4,14 @@
       image: drupal 
       port:  
       - 8080:8080
-      
+    networks: 
+      - jenknet
+  Backend:
+   image: postgres
+   environment:
+     - POSTGRES_PASSWOED=123456
+   network:
+     - jenknet
+   networks:
+    jenknet:
 
