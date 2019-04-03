@@ -5,13 +5,13 @@ services :
     ports:  
     - 80:80
     networks: 
-    - jenknet
+    - jenkinet
   Backend:
     image: postgres
     environment:
-    - POSTGRES_PASSWOED=123456
+    - POSTGRES_PASSWORD=123456
     networks:
-    - jenknet
+    - jenkinet
   networks:
-   jenknet:
+   jenkinet:
 
