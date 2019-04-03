@@ -12,6 +12,6 @@ services :
     - POSTGRES_PASSWORD=123456
     networks:
     - jenkinet
-  networks:
-    jenkinet:
+networks:
+  jenkinet:
 
