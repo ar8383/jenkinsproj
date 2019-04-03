@@ -4,6 +4,8 @@ services :
     image: drupal 
     ports:  
     - 80:80
+    deploy:
+      replicas:2
     networks: 
     - jenkinet
   Backend:
