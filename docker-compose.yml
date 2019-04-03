@@ -1,6 +1,6 @@
 version: '3'
 services : 
-  frontend:
+  Frontend:
     image: drupal 
     ports:  
     - 80:80
@@ -13,5 +13,5 @@ services :
     networks:
     - jenkinet
   networks:
-   jenkinet:
+    jenkinet:
 
