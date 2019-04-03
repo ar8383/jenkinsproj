@@ -1,17 +1,17 @@
-  version: '3'
-  services : 
-    frontend:
-      image: drupal 
-      port:  
-      - 8080:8080
+version: '3'
+services : 
+  frontend:
+    image: drupal 
+    port:  
+    - 8080:8080
     networks: 
-      - jenknet
+    - jenknet
   Backend:
-   image: postgres
-   environment:
-     - POSTGRES_PASSWOED=123456
-   network:
-     - jenknet
-   networks:
-    jenknet:
+    image: postgres
+    environment:
+    - POSTGRES_PASSWOED=123456
+    networks:
+    - jenknet
+  networks:
+   jenknet:
 
