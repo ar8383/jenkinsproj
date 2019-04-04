@@ -4,13 +4,13 @@ services:
        image: drupal
        ports:
        -80:80
-       network:
+       networks:
        -jenkinit
   Backend:
       image: postgres
       environment:
       POSTGRES_PASSWORD=123456
-      network:
+      networks:
       -jenkinit
 network:
   jenkinit:
